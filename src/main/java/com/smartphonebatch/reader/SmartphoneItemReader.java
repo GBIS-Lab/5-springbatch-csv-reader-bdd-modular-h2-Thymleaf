@@ -28,7 +28,7 @@ public class SmartphoneItemReader extends FlatFileItemReader<Smartphone> {
     public void init() throws IOException {
         System.out.println("Initialisation du Reader...");
 
-        //String filePath = "C:/Users/Guile/IdeaProjects/smartphonebatch5 - CSV-BDD-controller ThymeleafH2 REST/src/main/resources/smartphones.csv";
+        //String filePath = "C:/Users/<user>/IdeaProjects/smartphonebatch5 - CSV-BDD-controller ThymeleafH2 REST/src/main/resources/smartphones.csv";
         // Chargement du fichier via le classpath
         ClassPathResource classpathresource = new ClassPathResource("smartphones.csv");
         String filePath = classpathresource.getFile().getAbsolutePath();
