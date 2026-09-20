@@ -1,0 +1,55 @@
+﻿marque;modele;os;annee;tailleEcran;prix
+Apple;iPhone;iPhone OS 1.0;2007;3.5;399
+Apple;iPhone 3G;iPhone OS 2.0;2008;3.5;549
+Apple;iPhone 3GS;iPhone OS 3.0;2009;3.5;519
+Apple;iPhone 4;iOS 4;2010;3.5;629
+Apple;iPhone 4S;iOS 5;2011;3.5;629
+Apple;iPhone 5;iOS 6;2012;4.0;679
+Apple;iPhone 5c;iOS 7;2013;4.0;599
+Apple;iPhone 5s;iOS 7;2013;4.0;699
+Apple;iPhone 6;iOS 8;2014;4.7;709
+Apple;iPhone 6 Plus;iOS 8;2014;5.5;809
+Apple;iPhone 6s;iOS 9;2015;4.7;749
+Apple;iPhone 6s Plus;iOS 9;2015;5.5;859
+Apple;iPhone SE (1re génération);iOS 9.3;2016;4.0;489
+Apple;iPhone 7;iOS 10;2016;4.7;769
+Apple;iPhone 7 Plus;iOS 10;2016;5.5;909
+Apple;iPhone 8;iOS 11;2017;4.7;809
+Apple;iPhone 8 Plus;iOS 11;2017;5.5;919
+Apple;iPhone X;iOS 11;2017;5.8;1159
+Apple;iPhone XS;iOS 12;2018;5.8;1159
+Apple;iPhone XS Max;iOS 12;2018;6.5;1259
+Apple;iPhone XR;iOS 12;2018;6.1;859
+Apple;iPhone 11;iOS 13;2019;6.1;809
+Apple;iPhone 11 Pro;iOS 13;2019;5.8;1159
+Apple;iPhone 11 Pro Max;iOS 13;2019;6.5;1259
+Apple;iPhone SE (2e génération);iOS 13;2020;4.7;489
+Apple;iPhone 12;iOS 14;2020;6.1;909
+Apple;iPhone 12 Pro;iOS 14;2020;6.1;1159
+Apple;iPhone 12 mini;iOS 14;2020;5.4;809
+Apple;iPhone 12 Pro Max;iOS 14;2020;6.7;1259
+Apple;iPhone 13 mini;iOS 15;2021;5.4;809
+Apple;iPhone 13;iOS 15;2021;6.1;909
+Apple;iPhone 13 Pro;iOS 15;2021;6.1;1159
+Apple;iPhone 13 Pro Max;iOS 15;2021;6.7;1259
+Apple;iPhone SE (3e génération);iOS 15;2022;4.7;529
+Apple;iPhone 14;iOS 16;2022;6.1;1019
+Apple;iPhone 14 Plus;iOS 16;2022;6.7;1169
+Apple;iPhone 14 Pro;iOS 16;2022;6.1;1329
+Apple;iPhone 14 Pro Max;iOS 16;2022;6.7;1479
+Apple;iPhone 15;iOS 17;2023;6.1;969
+Apple;iPhone 15 Plus;iOS 17;2023;6.7;1119
+Apple;iPhone 15 Pro;iOS 17;2023;6.1;1229
+Apple;iPhone 15 Pro Max;iOS 17;2023;6.7;1479
+Apple;iPhone 16;iOS 18;2024;6.1;969
+Apple;iPhone 16 Plus;iOS 18;2024;6.7;1119
+Apple;iPhone 16 Pro;iOS 18;2024;6.3;1229
+Apple;iPhone 16 Pro Max;iOS 18;2024;6.9;1479
+Apple;iPhone 16e;iOS 18;2025;6.1;719
+Apple;iPhone 17;iOS 26;2025;6.3;969
+Apple;iPhone Air;iOS 26;2025;6.5;1229
+Apple;iPhone 17 Pro;iOS 26;2025;6.3;1329
+Apple;iPhone 17 Pro Max;iOS 26;2025;6.9;1479
+Apple;iPhone 17e;iOS 26;2026;6.1;719
+Apple;iPhone 18 Pro;iOS 27;2026;6.3;1479
+Apple;iPhone 18 Pro Max;iOS 27;2026;6.9;1629
