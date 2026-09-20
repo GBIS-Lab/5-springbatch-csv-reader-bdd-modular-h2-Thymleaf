@@ -25,10 +25,53 @@ public class SmartphoneItemReader extends FlatFileItemReader<Smartphone> {
     }
 
     @PostConstruct
-    public void init() throws IOException {
+	public void init() throws IOException {
         System.out.println("Initialisation du Reader...");
 
-        //String filePath = "C:/Users/<user>/IdeaProjects/smartphonebatch5 - CSV-BDD-controller ThymeleafH2 REST/src/main/resources/smartphones.csv";
+        // Chargement du fichier depuis le classpath.
+        // Fonctionne également lorsque l'application est exécutée depuis un JAR.
+        ClassPathResource resource = new ClassPathResource("smartphones.csv");
+
+        if (!resource.exists()) {
+            throw new IOException("Le fichier smartphones.csv est introuvable dans le classpath.");
+        }
+
+        System.out.println("Fichier CSV trouvé dans le classpath : " + resource.getDescription());
+
+        // On utilise directement la Resource Spring,
+        // sans appeler resource.getFile().
+        this.setResource(resource);
+
+        this.setLinesToSkip(1);
+
+        DelimitedLineTokenizer tokenizer = new DelimitedLineTokenizer();
+        tokenizer.setDelimiter(";");
+        tokenizer.setNames(
+                "marque",
+                "modele",
+                "os",
+                "anneeSortie",
+                "tailleEcran",
+                "prix"
+        );
+
+        BeanWrapperFieldSetMapper<Smartphone> mapper =
+                new BeanWrapperFieldSetMapper<>();
+
+        mapper.setTargetType(Smartphone.class);
+
+        DefaultLineMapper<Smartphone> lineMapper =
+                new DefaultLineMapper<>();
+
+        lineMapper.setLineTokenizer(tokenizer);
+        lineMapper.setFieldSetMapper(mapper);
+
+        this.setLineMapper(lineMapper);
+    }
+    /*public void init() throws IOException {
+        System.out.println("Initialisation du Reader...");
+
+        //String filePath = "C:/Users/Guile/IdeaProjects/smartphonebatch5 - CSV-BDD-controller ThymeleafH2 REST/src/main/resources/smartphones.csv";
         // Chargement du fichier via le classpath
         ClassPathResource classpathresource = new ClassPathResource("smartphones.csv");
         String filePath = classpathresource.getFile().getAbsolutePath();
@@ -56,5 +99,5 @@ public class SmartphoneItemReader extends FlatFileItemReader<Smartphone> {
         lineMapper.setFieldSetMapper(mapper);
 
         this.setLineMapper(lineMapper);
-    }
+    }*/
 }
